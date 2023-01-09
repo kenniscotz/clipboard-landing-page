@@ -1,0 +1,333 @@
+/* @import url(https://fonts.google.com/specimen/Bai+Jamjuree); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    font-family: 'Bai Jamjuree ';
+    overflow-x: hidden;
+    
+} 
+
+h3{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.3rem;
+    padding: 1rem;
+
+}
+
+P{
+    color: grey;
+    font-size: 1rem;
+}
+
+/* first section */
+.hero{
+    background-image: url(images/bg-header-desktop.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    
+
+}
+
+.hero img{
+    width: 50px;
+    padding-bottom: 1.5rem;
+
+}
+
+
+.hero p{
+    max-width: 500px;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+ 
+}
+
+
+button{
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    
+}
+.hero  .btn1{
+    background-color: rgb(74, 145, 115);
+   
+}
+
+.hero .btn2{
+    background-color: rgb(69, 69, 172);
+}
+
+/* second section */
+
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero2 h4{
+
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.hero2 p{
+   
+    max-width: 560px;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+/* main section */
+
+.main{
+ 
+    padding: 5rem  0;
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+}
+
+
+.main img{
+    width: 452px;
+}
+
+.main p{
+    max-width: 300px;
+}
+
+
+/* third section */
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+
+}
+
+
+.middle-section p{
+  
+    max-width: 540px;
+    text-align: center;
+    white-space: normal;
+}
+
+/* main 2  */
+
+.main2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+}
+
+.main2 img{
+    width: 600px;
+}
+
+/* section container */
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 5rem;
+    text-align: center;
+ 
+
+}
+
+
+.container img{
+    width: 30px;
+    padding: 1rem 0;
+    
+}
+
+.container h4{
+    padding: 1rem 0;
+}
+
+.container p{
+min-width: 150px;
+ max-width: 300px;
+}
+
+/* article section */
+
+.article{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    gap: 6rem;
+}
+
+.article img{
+    width: 80px;
+    height: 25px;
+}
+
+/* the next section uaed the same styling with the hero section, only the background color was changed inside the html */
+
+
+/* footer */
+ 
+footer{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.185);
+    justify-content: space-around;
+    padding: 2rem 0rem;
+
+}
+
+
+footer img{
+    width: 30px;
+    height: 30px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+    white-space: nowrap;
+}
+
+footer a:hover{
+    color: rgb(74, 145, 115);
+    
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 40%;
+}
+
+footer .socials {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .socials img {
+    width: 25px;
+    height: 25px;
+    
+}
+
+/* media queries */
+
+@media screen and (max-width: 900px) {
+    
+    .main img{
+        width: 350px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .main2 img{
+        width: 550px;
+    }
+
+
+    .container{
+        gap: 2rem;
+    }
+
+    .article{
+        gap: 3rem;
+    }
+}
+
+
+/* second media query */
+
+@media screen and (max-width: 650px) {
+
+    .hero div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+
+    .middle-section{
+        padding-bottom: 0rem;
+    }
+    
+
+    .main2 img{
+        width: 450px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 5rem 0;
+        
+    }
+
+    .article img{
+        width: 100px;
+        height: 50px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     footer .socials {
+        gap: 2rem;
+    }
+}
